@@ -1,4 +1,4 @@
-/* prototype/feed-d.html (D안) 의 값을 옮김. 몇 번째 사진 표시와 무한 스크롤 상태는 아직 없음 */
+/* prototype/feed-d.html (D안) 의 값을 옮김. 무한 스크롤 상태는 아직 없음 */
 :root {
   --cream: #fff3f0;
   --cream-deep: #bfe8d6;
@@ -148,6 +148,37 @@ body, button { letter-spacing: -0.03em; }
   object-fit: cover;
   display: block;
 }
+/* 캐러셀도 정사각형 영역을 꽉 채우게 */
+.media .swiper { height: 100%; }
+.media img { -webkit-user-drag: none; user-select: none; }
+
+/* 몇 번째 사진인지: 오른쪽 위 배지 + 아래 점 */
+.media__count {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  padding: 4px 12px;
+  border: var(--line);
+  border-radius: 999px;
+  background: var(--gold);
+  font-family: var(--sans);
+  font-size: 12px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 0 0;
+}
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2.5px solid var(--choco);
+  background: var(--paper);
+}
+.dot--active { background: var(--crust); }
 
 /* 본문 */
 .card__body { padding: 12px 20px 20px; }
