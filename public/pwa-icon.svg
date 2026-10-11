@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- 홈 화면 아이콘: 상단바 로고 빵을 디자인 규칙 색으로. 둥글게 잘려도 남도록 가운데 70% 안에 그림 -->
+  <rect width="512" height="512" fill="#fff3f0"/>
+  <g transform="translate(256 256) scale(9) translate(-22 -24)">
+    <ellipse cx="22" cy="24" rx="18" ry="16" fill="#ffd66b" stroke="#4a3535" stroke-width="2.5"/>
+    <ellipse cx="22" cy="15" rx="8" ry="4" fill="#ee7f9f"/>
+    <circle cx="17" cy="25" r="1.6" fill="#4a3535"/>
+    <circle cx="27" cy="25" r="1.6" fill="#4a3535"/>
+    <path d="M19 29 q3 3 6 0" fill="none" stroke="#4a3535" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
