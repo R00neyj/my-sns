@@ -1,5 +1,4 @@
 import Feed from './components/Feed'
-import { samplePosts } from './data/samplePosts'
 import './App.css'
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
         </div>
       </header>
 
-      <Feed posts={samplePosts} />
+      <Feed />
     </div>
   )
 }
